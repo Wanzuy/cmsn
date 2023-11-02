@@ -27,6 +27,10 @@
     </head>
 
     <body>
+        <!-- 5. Phần nhạc -->
+        <audio autoplay loop id="player">
+            <source src="music.mp3" />
+        </audio>
         <link
             href="https://fonts.googleapis.com/css?family=Wendy+One"
             rel="stylesheet"
@@ -61,12 +65,8 @@
                 <!-- 4. Tên của người đó -->
                 <h1 onclick="showMessage()" class="avatar__title">Hà Trang</h1>
             </div>
-
-            <!-- 5. Phần nhạc -->
-            <audio id="player" autoplay loop>
-                <source src="music.mp3" />
-            </audio>
         </div>
+
         <script>
             if (document.location.search.match(/type=embed/gi)) {
                 window.parent.postMessage("resize", "*");
